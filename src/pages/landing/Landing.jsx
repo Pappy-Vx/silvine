@@ -143,6 +143,9 @@ const Landing = () => {
           <span>Investment</span>
         </div>
       </section>
+      <section className="landing_video">
+        
+      </section>
       <section>
         <Footer />
       </section>

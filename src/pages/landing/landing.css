@@ -143,7 +143,7 @@
 }
 
 .second_impact {
-  margin-top: 11.4rem;
+  margin-top: 10rem;
   padding: 0 15rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -207,11 +207,11 @@
 .horizontal {
     position: relative;
     top: 4.28rem;
-    margin-left: 47%;
+    margin-left: 46.6%;
     margin-bottom: 0;
 }
 .vertical {
-    border-left: 2.8px solid #6070f0;
+    border-left: 2.5px solid #6070f0;
     height: 3.5rem;
     margin-left: 50%;
     position: relative;
@@ -232,7 +232,7 @@
 }
 .container_box2 {
     background: #fbf9f7;
-    border-top: 2.8px solid #6070f0;
+    border-top: 2.5px solid #6070f0;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -266,6 +266,25 @@
     line-height: 14.5px;
     letter-spacing: .8rem;
 }
+.landing_video {
+    height: 80vh;
+    background: url(../../assets/video.webp);
+    margin: 5rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
   .hero {
     background: url(../../assets/hero.webp);
