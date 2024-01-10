@@ -1,128 +1,363 @@
 .hero {
-    background: url(../../assets/hero.webp);
-    height: 100vh;
-    width: 100vw;
-    padding: 0 5rem ;
-    color: #F2EDE4;
-  
+  background: url(../../assets/hero.webp);
+  height: 100vh;
+  width: 100vw;
+  padding: 0 5rem;
+  color: #f2ede4;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    height: 80%;
-  
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  height: 80%;
 }
 .hero-title {
-    color: #F2EDE4;
-    font-weight: 700;
-    font-size: 40px;
-    padding-bottom: 1rem;
+  color: #f2ede4;
+  font-weight: 700;
+  font-size: 40px;
+  padding-bottom: 1rem;
 }
 
 .hero-investment {
-    color: #29337B;
-    font-weight: 700;
+  color: #29337b;
+  font-weight: 700;
 }
 .hero-text {
-    padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 .cta {
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-  
-  .cta span {
-    padding-bottom: 7px;
-    font-size: 14px;
-    padding-right: 15px;
-    
-  }
-  
-  .cta svg {
-    transform: translateX(-8px);
-    transition: all 0.3s ease;
-  }
-  
-  .cta:hover svg {
-    transform: translateX(0);
-  }
-  
-  .cta:active svg {
-    transform: scale(0.9);
-  }
-  
-  .hover-underline-animation {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #f2ede4;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f2ede4;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.impact {
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+.impact > h2 {
+  color: #292929;
+  padding: 0 5rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+.impact > p {
+  margin-top: 1rem;
+  color: #666460;
+  padding: 0 5rem;
+}
+.impact_containers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 40vh;
+  margin-top: 2rem;
+}
+.impact1 {
+  background-color: #edeffc;
+  padding-left: 5rem;
+  padding-top: 3rem;
+  color: #fff;
+}
+.impact1 > div {
+  background-color: #1f275e;
+  height: 40vh;
+  padding: 2rem;
+}
+.impact1 h4 {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  line-height: 25.2px;
+}
+.impact1 p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22.1px;
+}
+.impact2 {
+  background-color: #fff;
+  padding-right: 0rem;
+  padding-top: 3rem;
+}
+
+.impact2 > div {
+  height: 40vh;
+  padding: 2rem;
+}
+.impact2 h4 {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  line-height: 25.2px;
+}
+.impact2 p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22.1px;
+}
+.mobile_impact_box {
+    visibility: hidden;
+}
+
+.second_impact {
+  margin-top: 10rem;
+  padding: 0 15rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.silvine1 {
+  background: #fbf9f7;
+  height: 25vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.silvine1 h5 {
+  line-height: 22.4px;
+  font-size: 16px;
+}
+.silvine1 p {
+  line-height: 16.8px;
+  font-size: 12px;
+}
+.silvine2 {
+  background: #f2ede4;
+  height: 25vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.silvine2 h5 {
+  line-height: 22.4px;
+  font-size: 16px;
+}
+.silvine2 p {
+  line-height: 16.8px;
+  font-size: 12px;
+}
+.silvine3 {
+  background: #fbf9f7;
+  height: 25vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.silvine3 h5 {
+  line-height: 22.4px;
+  font-size: 16px;
+}
+.silvine3 p {
+  line-height: 16.8px;
+  font-size: 12px;
+}
+.horizontal {
     position: relative;
-    color: #F2EDE4;
-    padding-bottom: 20px;
-  }
-  
-  .hover-underline-animation:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #F2EDE4;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .cta:hover .hover-underline-animation:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  .impact {
-    background-color: #fff;
+    top: 3rem;
+    margin-left: 48%;
+    margin-bottom: 0;
+}
+.vertical {
+    border-left: 3px solid #29337b;
+    height: 3.5rem;
+    margin-left: 50%;
+    position: relative;
+    top:4rem;
+    margin-top: 0;
+}
+.landpage_container_3 {
+     margin-top: 4rem; 
+    height: 35vh;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.container_box1 {
+    background: url(../../assets/investment\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: cover;
+}
+.container_box2 {
+    background: #fbf9f7;
+    border: 1px solid #1f275e;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    gap: 1rem;
+}
+.container_box2 img {
+    width: 100px;
+}
+.container_box2 p {
+    font-size: 14px;
+    line-height: 26px;
+}
+.container_box3 {
+    background: #1f275e;
+    color: #f2ede4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.container_box3 h3 {
+    font-size: 44px;
+    line-height: 50.25px;
+    font-weight: 700;
+}
+.container_box3 span {
+    font-size: 10px;
+    line-height: 14.5px;
+    letter-spacing: .8rem;
+}
+@media (max-width: 768px) {
+  .hero {
+    background: url(../../assets/hero.webp);
     height: 100vh;
     width: 100vw;
+    padding: 0 1rem;
+    color: #f2ede4;
+    background-position: center;
   }
-  .impact > h2 {
-    color:#292929;
+  .container {
+    justify-content: center;
 
+    gap: 0.5rem;
   }
-  .impact > p {
-    color:#666460
+  .hero-title {
+    color: #f2ede4;
+    font-weight: 400;
+    font-size: 25px;
+    padding-bottom: 0.2rem;
   }
 
-  @media (max-width: 768px) {
-    .hero {
-        background: url(../../assets/hero.webp);
-        height: 100vh;
-        width: 100vw;
-        padding: 0 1rem ;
-        color: #F2EDE4;
-        background-position: center;
-      
-    }
-    .container{
-        justify-content: center;
-        
-        gap: .5rem;
-      
-    }
-    .hero-title {
-        color: #F2EDE4;
-        font-weight: 400;
-        font-size: 25px;
-        padding-bottom: .2rem;
-    }
+  .hero-investment {
+    color: #fff;
+    font-weight: 400;
+  }
+  .hero-text {
+    padding-bottom: 0.2rem;
+  }
+  .cta {
+    visibility: hidden;
+  }
+
+  .impact_containers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 60vh;
+  }
+  .impact1 {
+    background-color: #edeffc;
+    padding: 2rem;
+    color: #fff;
+  }
+  .impact1 > div {
+    background-color: #1f275e;
+    height: 60vh;
+    padding: 2rem;
+  }
+  .ambition_image {
+    background-image: url(../../assets/effect.webp);
+  }
+  .impact2 {
+    background-color: #fff;
+    padding-right: 0rem;
+    padding-top: 3rem;
+  }
+
+  .impact2 > div {
     
-    .hero-investment {
-        color: #fff;
-        font-weight: 400;
-    }
-    .hero-text {
-        padding-bottom: .2rem;
-    }
-    .cta {
-        visibility: hidden;
-      }
-      
+    padding: 2rem;
   }
+  .impact2 p {
+    margin-bottom: 3rem;
+  }
+  .second_impact {
+    visibility: hidden;
+  }
+  .mobile_impact_box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    visibility: visible;
+  }
+  .mobile_impact_box1 {
+    background: #1f275e;
+    color: #fbf9f7;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+  .mobile_impact_box2 {
+    background: #1f275e;
+    color: #fbf9f7;
+    padding: 2rem;
+    margin-top: 3rem;
+  
+  }
+  .mobile_impact_box3 {
+    background: #1f275e;
+    color: #fbf9f7;
+    padding: 2rem;
+    margin-top: 2.5rem;
+  
+  }
+}
