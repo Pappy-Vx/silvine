@@ -1,0 +1,128 @@
+.hero {
+    background: url(../../assets/hero.webp);
+    height: 100vh;
+    width: 100vw;
+    padding: 0 5rem ;
+    color: #F2EDE4;
+  
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    height: 80%;
+  
+}
+.hero-title {
+    color: #F2EDE4;
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 1rem;
+}
+
+.hero-investment {
+    color: #29337B;
+    font-weight: 700;
+}
+.hero-text {
+    padding-bottom: .5rem;
+}
+.cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    font-size: 14px;
+    padding-right: 15px;
+    
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: #F2EDE4;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F2EDE4;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .impact {
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+  }
+  .impact > h2 {
+    color:#292929;
+
+  }
+  .impact > p {
+    color:#666460
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+        background: url(../../assets/hero.webp);
+        height: 100vh;
+        width: 100vw;
+        padding: 0 1rem ;
+        color: #F2EDE4;
+        background-position: center;
+      
+    }
+    .container{
+        justify-content: center;
+        
+        gap: .5rem;
+      
+    }
+    .hero-title {
+        color: #F2EDE4;
+        font-weight: 400;
+        font-size: 25px;
+        padding-bottom: .2rem;
+    }
+    
+    .hero-investment {
+        color: #fff;
+        font-weight: 400;
+    }
+    .hero-text {
+        padding-bottom: .2rem;
+    }
+    .cta {
+        visibility: hidden;
+      }
+      
+  }

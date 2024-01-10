@@ -1,0 +1,49 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: transparent;
+   
+  }
+  
+  .menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Hide on larger screens */
+  }
+  
+  .menu-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    color: #1F275E;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .menu-list li {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    /* Show menu toggle on smaller screens */
+    .menu-toggle {
+      display: block;
+    }
+  
+    /* Hide the menu list by default on smaller screens */
+    .menu-list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust based on your design */
+      left: 0;
+      width: 100%;
+      background-color:transparent;
+    }
+  
+    .menu-list.show {
+      display: flex;
+    }
+  }
