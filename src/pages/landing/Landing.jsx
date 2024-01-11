@@ -3,7 +3,14 @@ import "./landing.css";
 import Nav from "../../components/header/Nav";
 import Footer from "../../components/footer/Footer";
 import logo from "../../assets/silvine.png";
-import line from "../../assets/line.png"
+import line from "../../assets/line.png";
+import effect2 from "../../assets/effect2.webp";
+import effect1 from "../../assets/effect1.png";
+import svg from '../../assets/svg.png'
+import advox from '../../assets/advox.png'
+import autobuy from '../../assets/autobuy.png'
+import brainiac from '../../assets/brainiac.png'
+import sgi from '../../assets/sgi.png'
 const Landing = () => {
   return (
     <>
@@ -48,14 +55,18 @@ const Landing = () => {
           </div>
         </div>
       </section>
-    
-      <section className="impact">
 
-        <h2>Our impact</h2>
-        <p>
-          Fulfilling Promise: Unveiling the Transformative Impact of Our
-          Initiatives
-        </p>
+      <section className="impact">
+        <div className="impact_grid">
+          <div className="impact_grid1">
+            <h2>Our impacts</h2>
+            <p>
+              Fulfilling Promise: Unveiling the Transformative Impact of Our
+              Initiatives
+            </p>
+          </div>
+          <div className="impact_grid2"></div>
+        </div>
         <div className="impact_containers">
           <div className="impact1">
             <div>
@@ -95,6 +106,10 @@ const Landing = () => {
             </div>
           </div>
         </div>
+        <div className="silvine_grid">
+          <div className="silvine_grid1"></div>
+          <div className="silvine_grid2"></div>
+        </div>
         <div className="second_impact">
           <div className="silvine1">
             <h5>Silvine Fin-solution</h5>
@@ -122,9 +137,7 @@ const Landing = () => {
       <div className="horizontal">
         <img src={line} alt="" />
       </div>
-      <div className="vertical">
-
-      </div>
+      <div className="vertical"></div>
       <section className="landpage_container_3">
         <div className="container_box1"></div>
         <div className="container_box2">
@@ -143,8 +156,58 @@ const Landing = () => {
           <span>Investment</span>
         </div>
       </section>
-      <section className="landing_video">
-        
+      <section className="landing_video"></section>
+
+      <section className="landing_container_4">
+        <div className="impact_grid">
+          <div className="impact_grid1">
+            <h2>Our impacts</h2>
+            <p>
+              Fulfilling Promise: Unveiling the Transformative Impact of Our
+              Initiatives
+            </p>
+          </div>
+          <div className="impact_grid2"></div>
+        </div>
+        <div className="portfolio_grid">
+          <div className="portfolio_grid1">
+            <div className="overview">
+              <img src={effect2} alt="" />
+              <div className="overview_text">
+                <div>
+                  <h4>Overview</h4>
+                  <p>
+                    By maintaining a disciplined and research-driven approach,
+                    we strive to deliver consistent value and financial growth
+                    for our clients. Our portfolio comprises a mix of equities,
+                    fixed-income securities, and alternative investments,
+                    carefully curated to align with our clients' financial goals
+                    and risk tolerance.
+                  </p>
+                </div>
+                <div className="overview-brand">
+                    <div>
+                        <img src={svg} alt="" />
+                    </div>
+                    <div>
+                        <img src={autobuy} alt="" />
+                    </div>
+                    <div>
+                        <img src={brainiac} alt="" />
+                    </div>
+                    <div>
+                        <img src={advox} alt="" />
+                    </div>
+                    <div>
+                        <img src={sgi} alt="" />
+                    </div>
+                </div>
+              </div>
+              <img src={effect1} alt="" className="effect2" />
+            </div>
+          </div>
+          <div className="portfolio_grid2"></div>
+        </div>
       </section>
       <section>
         <Footer />

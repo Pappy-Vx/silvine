@@ -80,22 +80,36 @@
   height: 100vh;
   width: 100vw;
 }
-.impact > h2 {
-  color: #292929;
-  padding: 0 5rem;
-  margin-bottom: 2rem;
-  margin-top: 5rem;
+.impact_grid {
+    padding-left:  5rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 30vh;
+    
 }
-.impact > p {
+.impact_grid1 {
+    border-bottom: 0.1px solid #faf3e5;
+    border-left: 0;
+    margin-top: 2rem;
+}
+.impact_grid2 {
+    background: #f7f6f4;
+    border: 0.1px solid #faf3e5;
+}
+.impact  h2 {
+  color: #292929;
+  
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.impact  p {
   margin-top: 1rem;
   color: #666460;
-  padding: 0 5rem;
 }
 .impact_containers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 40vh;
-  margin-top: 2rem;
 }
 .impact1 {
   background-color: #edeffc;
@@ -117,11 +131,13 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 22.1px;
+  color: #fff;
 }
 .impact2 {
   background-color: #fff;
   padding-right: 0rem;
   padding-top: 3rem;
+  
 }
 
 .impact2 > div {
@@ -140,16 +156,30 @@
 }
 .mobile_impact_box {
     visibility: hidden;
+  
 }
 
 .second_impact {
-  margin-top: 10rem;
+  
   padding: 0 15rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
 }
-
+.silvine_grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 30vh;
+}
+.silvine_grid1 {
+    background: transparent;
+    border-bottom: 0.1px solid #faf3e5
+}
+.silvine_grid2 {
+    border: 0.1px solid #faf3e5;
+    background: #f7f6f4;
+}
 .silvine1 {
   background: #fbf9f7;
   height: 25vh;
@@ -206,7 +236,7 @@
 }
 .horizontal {
     position: relative;
-    top: 4.28rem;
+    top: 11.7rem;
     margin-left: 46.6%;
     margin-bottom: 0;
 }
@@ -215,11 +245,11 @@
     height: 3.5rem;
     margin-left: 50%;
     position: relative;
-    top:4rem;
+    top:11.4rem;
     margin-top: 0;
 }
 .landpage_container_3 {
-     margin-top: 4rem; 
+     margin-top: 11.4rem; 
     height: 35vh;
     display: grid;
     grid-template-columns: 25% 50% 25%;
@@ -269,7 +299,77 @@
 .landing_video {
     height: 80vh;
     background: url(../../assets/video.webp);
-    margin: 5rem 0;
+    margin-top: 5rem ;
+}
+.landing_container_4 {
+ height: 100vh;
+}
+.landing_container_4  h2 {
+  color: #292929;
+  
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.landing_container_4  p {
+  margin-top: 1rem;
+  color: #666460;
+}
+.portfolio_grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 70vh;
+}
+.portfolio_grid2 {
+    background-color: #EDEFFC;
+}
+.overview {
+    width: 80vw;
+    height: 60vh;
+    background-color: #29337b;
+    overflow-y: visible;
+    z-index: 9;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.overview img {
+    width: 20%;
+    z-index: 10;
+    position: absolute;
+}
+.effect2 {
+    right: 0;
+    bottom: 0;
+}
+.overview_text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 11;
+    padding: 0 5rem;
+    color: #fff;
+}
+.overview_text h4 {
+    font-size: 18px;
+    line-height: 25.3px;
+    
+}
+.overview_text p {
+    color: #fff;
+    font-size: 13px;
+    line-height: 23.4px;
+}
+.overview-brand {
+   display: grid;
+   grid-template-columns: 30% 30% 30%;
+   padding-left: 5rem;
+   gap: 2rem;
+   padding-top: 3rem;
+}
+.overview-brand img {
+    width: 5%;
 }
 
 
