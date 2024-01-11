@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from '../../assets/logo.webp'
 import "./header.css";
+import { FiChevronDown } from "react-icons/fi";
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,7 +26,7 @@ const Nav = () => {
           Home
         </Link>
         <Link to="/news" >
-          Get to Know Us
+          <span>Get to Know Us</span> <span><FiChevronDown /></span>
         </Link>
         <Link to="/management" >
           Our Management

@@ -6,11 +6,15 @@ import logo from "../../assets/silvine.png";
 import line from "../../assets/line.png";
 import effect2 from "../../assets/effect2.webp";
 import effect1 from "../../assets/effect1.png";
-import svg from '../../assets/svg.png'
-import advox from '../../assets/advox.png'
-import autobuy from '../../assets/autobuy.png'
-import brainiac from '../../assets/brainiac.png'
-import sgi from '../../assets/sgi.png'
+import svg from "../../assets/svg.png";
+import advox from "../../assets/advox.png";
+import autobuy from "../../assets/autobuy.png";
+import brainiac from "../../assets/brainiac.png";
+import sgi from "../../assets/sgi.png";
+import news from "../../assets/news.png";
+import news1 from "../../assets/news1.png";
+import team from '../../assets/team.webp'
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 const Landing = () => {
   return (
     <>
@@ -161,10 +165,9 @@ const Landing = () => {
       <section className="landing_container_4">
         <div className="impact_grid">
           <div className="impact_grid1">
-            <h2>Our impacts</h2>
+            <h2>Our Portfolio</h2>
             <p>
-              Fulfilling Promise: Unveiling the Transformative Impact of Our
-              Initiatives
+              Showcasing Excellence: A Visual Chronicle of Our Diverse Portfolio
             </p>
           </div>
           <div className="impact_grid2"></div>
@@ -186,27 +189,164 @@ const Landing = () => {
                   </p>
                 </div>
                 <div className="overview-brand">
-                    <div>
-                        <img src={svg} alt="" />
-                    </div>
-                    <div>
-                        <img src={autobuy} alt="" />
-                    </div>
-                    <div>
-                        <img src={brainiac} alt="" />
-                    </div>
-                    <div>
-                        <img src={advox} alt="" />
-                    </div>
-                    <div>
-                        <img src={sgi} alt="" />
-                    </div>
+                  <div>
+                    <img src={svg} alt="" />
+                  </div>
+                  <div>
+                    <img src={autobuy} alt="" />
+                  </div>
+                  <div>
+                    <img src={brainiac} alt="" />
+                  </div>
+                  <div>
+                    <img src={advox} alt="" />
+                  </div>
+                  <div>
+                    <img src={sgi} alt="" />
+                  </div>
                 </div>
+              </div>
+              <div className="overview_box">
+                <div className="overviewbox1">Real Estate</div>
+                <div className="overviewbox2">Venture & Growth Funds</div>
+                <div className="overviewbox3">Financial instruments</div>
+                <div className="overviewbox4">Direct Investment</div>
+                <div className="overviewbox5">Buyout Funds</div>
               </div>
               <img src={effect1} alt="" className="effect2" />
             </div>
           </div>
           <div className="portfolio_grid2"></div>
+        </div>
+      </section>
+      <section className="news_container">
+        <div className="news_text-container1">
+          <h2>News</h2>
+          <p>
+            Stay Informed: Discover the Latest Updates and Insights in Our News
+            Hub
+          </p>
+        </div>
+        <div className="news_text-container2">
+          <span className="arrow_left">
+            <FiChevronLeft />
+          </span>
+          <span>
+            <FiChevronRight />
+          </span>
+        </div>
+        <div className="news_text-container3">
+          <span className="news-date">11/12/2023</span>
+          <h6>Silvine investment</h6>
+          <img src={news} alt="" />
+          <span className="news-title">
+            Silvine Investment announces partnership of Saudi Arab...
+          </span>
+          <p>
+            Silvien Investment a wholly owned company by Public Investment Fund
+            (PIF) signed a partners...
+          </p>
+          <button className="news-cta">
+            <span className="news-hover-underline-animation"> Read More </span>
+            <svg
+              id="arrow-horizontal"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="10"
+              viewBox="0 0 46 16"
+              fill="#292929"
+            >
+              <path
+                id="Path_10"
+                data-name="Path 10"
+                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                transform="translate(30)"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div className="news_text-container4">
+          <span className="news-date1">11/12/2023</span>
+          <h6>Silvine Fin-solution</h6>
+          <img src={news1} alt="" />
+          <span className="news-title1">
+            Lendo Secures $28M in Series B Funding Led by Silvine f...
+          </span>
+          <p>
+            Silvine Fin-Solution Investments a wholly owned company by Public
+            Investment Fund (PIF) signed a partners...
+          </p>
+          <button className="news-cta">
+            <span className="news-hover-underline-animation"> Read More </span>
+            <svg
+              id="arrow-horizontal"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="10"
+              viewBox="0 0 46 16"
+              fill="#292929"
+            >
+              <path
+                id="Path_10"
+                data-name="Path 10"
+                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                transform="translate(30)"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section className="management">
+        <div className="management-container1">
+          <h2>Meet Our Leadership</h2>
+          <p>
+            Guiding Visionaries: Introducing the Minds Behind Our Leadership
+          </p>
+        </div>
+        <div className="management-container2"></div>
+        <div className="management-container3">
+          <h5>Our Ambition</h5>
+          <p>
+            Our board comprises exceptionally reputable and extensively
+            qualified leaders who contribute their exceptional experience and
+            expertise for the advancement of our company.<br/><br/> Their expertise
+            provide valuable insights, strategic guidance, and help make
+            informed decisions that contribute to the success and growth of
+            Silvine Investment.
+          </p>
+          <button className="news-cta">
+            <span className="news-hover-underline-animation">
+              {" "}
+              Meet more of our leadership{" "}
+            </span>
+            <svg
+              id="arrow-horizontal"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="10"
+              viewBox="0 0 46 16"
+              fill="#292929"
+            >
+              <path
+                id="Path_10"
+                data-name="Path 10"
+                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                transform="translate(30)"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div className="management-container4">
+            <div className="team1">
+                <img src={team} alt="" />
+                <span className="team-name1">Mr. Stephen O.</span>
+                <span className="team-position1">CEO</span>
+            </div>
+            <div className="team2">
+                <img src={team} alt="" />
+                <span className="team-name2">Mr. Adebayo Something</span>
+                <span className="team-position2">Chairman Of Board </span>
+            </div>
         </div>
       </section>
       <section>
